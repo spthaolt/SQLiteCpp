@@ -34,7 +34,7 @@ else (MSVC)
     set(CPPLINT_ARG_OUTPUT      "--output=eclipse")
     set(CPPCHECK_ARG_TEMPLATE   "--template=gcc")
     # Useful compile flags and extra warnings
-    add_compile_options(-fstack-protector -Wall -Wextra -Wpedantic -Wno-long-long -Wswitch-enum -Wshadow -Winline)
+    add_compile_options(-fstack-protector -Wall -Wextra -Wno-long-long -Wswitch-enum -Wshadow -Winline)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-c++0x-compat") # C++ only
     if (CMAKE_COMPILER_IS_GNUCXX)
         # GCC flags
